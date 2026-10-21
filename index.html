@@ -11,27 +11,14 @@
 <style>
 html,body{margin:0}
 img{max-width:100%;display:block}
-/* Layout: dark indigo stage; big name intro; boxed logo; tab bar; one light panel holding a featured project, a two-column project grid and a contact footer. */
+/* Layout (dark-only by design): charcoal stage; big name intro; tab bar; one charcoal panel holding a featured project, a two-column project grid and a contact footer. */
 :root{
-  --stage:#202227; --stage-2:#2C2F35; --stage-ink:#FFFFFF; --stage-muted:rgba(255,255,255,.62); --stage-line:rgba(255,255,255,.55); --accent-bright:#A99CF5;
-  --panel:#FFFFFF; --panel-2:#F3F4F6; --ink:#1E1F24; --ink-2:#565962; --muted:#8C8F98;
-  --line:#E2E3E7; --accent:#4B3FA0; --accent-soft:#ECEAF8; --on-accent:#FFFFFF;
-  --head:"Source Sans 3", "Source Sans Pro", Helvetica, Arial, sans-serif;
-  --body:"Merriweather", Georgia, "Times New Roman", serif;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --stage:#141518; --stage-2:#1D1F23;
-    --panel:#1C1D21; --panel-2:#24262B; --ink:#EDEEF1; --ink-2:#B4B7BF; --muted:#80838C;
-    --line:#32343A; --accent:#ABA0F5; --accent-soft:#2A2648; --on-accent:#16132B;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"]{
-  --stage:#141518; --stage-2:#1D1F23;
+  color-scheme: dark;
+  --stage:#141518; --stage-2:#1D1F23; --stage-ink:#FFFFFF; --stage-muted:rgba(255,255,255,.62); --stage-line:rgba(255,255,255,.55); --accent-bright:#A99CF5;
   --panel:#1C1D21; --panel-2:#24262B; --ink:#EDEEF1; --ink-2:#B4B7BF; --muted:#80838C;
   --line:#32343A; --accent:#ABA0F5; --accent-soft:#2A2648; --on-accent:#16132B;
-  color-scheme: dark;
+  --head:"Source Sans 3", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --body:"Merriweather", Georgia, "Times New Roman", serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -144,8 +131,8 @@ a.shot:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(20,21,24,.08)
     <ul><li><a class="tab active" href="#projects">Projects</a></li></ul>
     <div class="social">
       <!-- Replace the # with your real profile URLs -->
-      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/guillaumemarinho/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/guillaumemarinho" target="_blank" rel="noopener">GitHub</a>
     </div>
   </nav>
 
@@ -164,7 +151,7 @@ a.shot:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(20,21,24,.08)
       <ul class="chips"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Cloudflare Workers</li></ul>
       <div class="actions">
         <a class="button primary" href="https://loan-view-beta.beta-loanview.workers.dev" target="_blank" rel="noopener">Open the app</a>
-        <a class="button" href="#" target="_blank" rel="noopener">View code</a>
+        <a class="button" href="https://github.com/guillaumemarinho/loan-view" target="_blank" rel="noopener">View code</a>
       </div>
     </article>
 
@@ -179,7 +166,7 @@ a.shot:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(20,21,24,.08)
       <p class="text">Projects quarterly cash flows for a pool of commercial real estate loans, runs them through a note waterfall and prices each class off a rating and WAL spread curve. Outputs price, yield, discount margin and duration per tranche, models call protection, and stresses losses across value declines and default rates.</p>
       <ul class="chips"><li>Python</li><li>NumPy</li><li>pandas</li><li>Plotly</li><li>Streamlit</li><li>pytest</li></ul>
       <div class="actions">
-        <a class="button" href="#" target="_blank" rel="noopener">View code</a>
+        <a class="button" href="https://github.com/guillaumemarinho/cmbs-pricer" target="_blank" rel="noopener">View code</a>
       </div>
     </article>
 
@@ -193,7 +180,7 @@ a.shot:hover{transform:translateY(-2px); box-shadow:0 2px 4px rgba(20,21,24,.08)
       <section class="details">
         <div><h3>Email</h3><p><a href="mailto:guillaume.marinho@edu.escp.eu">guillaume.marinho@edu.escp.eu</a></p></div>
         <div><h3>Mobile</h3><p><a href="tel:+447849187018">+44 784 9187 018</a></p></div>
-        <div><h3>Social</h3><p><a href="#" target="_blank" rel="noopener">LinkedIn</a> · <a href="#" target="_blank" rel="noopener">GitHub</a></p></div>
+        <div><h3>Social</h3><p><a href="https://www.linkedin.com/in/guillaumemarinho/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/guillaumemarinho" target="_blank" rel="noopener">GitHub</a></p></div>
       </section>
     </footer>
   </main>
